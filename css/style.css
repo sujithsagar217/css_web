@@ -18,6 +18,7 @@ ul {
 .profile_image {
   text-align: center;
   align-self: center;
+  padding-left: 90px;
 }
 
 .education {
