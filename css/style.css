@@ -20,6 +20,11 @@ ul {
   text-align: center;
   align-self: center;
 }
+@media only screen and (max-width: 600px) {
+  .profile_image{
+    padding-right: 60px;
+  }
+}
 
 .education {
   text-align: center;
