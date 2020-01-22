@@ -46,6 +46,10 @@ ul {
   background-color: #f5f5f5;
 }
 
+.contact-form {
+  padding-top: 10px;
+}
+
 .skills td:hover {
   background-color: #f5f5f5;
 }

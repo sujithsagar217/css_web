@@ -6,14 +6,16 @@
   <title>Developer</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="JavaScript" href="scripts/script.js">
 </head>
 
 <body style="background-color: #e3f6f5;">
   <center>
-    <h1>My First Website</h1>
-    <h3>in</h3>
-    <h1>HTML</h1>
-    <br>
+    <h3>Website</h3>
+    <h5>in</h5>
+    <h3>HTML CSS JS<br></h3>
     <h3>by</h3>
     <a href="index.html">
       <h2>Sujith Sagar</h2>
@@ -21,21 +23,38 @@
     <p><strong>email: gdvsujithsagar217@gmail.com</strong></p>
     <hr>
   </center>
-
-  <center>
-    <h4>Ping Me 👇</h4>
-    <form class="" action="mailto:gdvsujithsagar217@gmail.com" method="post">
-      <label><strong>Name:</strong></label>
-      <input type="text" name="yourName" value=""><br><br>
-      <label><strong>Message:</strong></label>
-      <textarea name="yourMessage" rows="1" cols="20"></textarea><br><br>
-      <input type="submit">
+  <div class="row contact-form">
+    <form class="col s6 m4 offset-s3 offset-m4" action="mailto:gdvsujithsagar217@gmail.com" method="post" enctype="text/plain">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" name="firstname" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" name="lastname" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" name="email" class="validate">
+          <label for="email">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea2" name="message" class="materialize-textarea" data-length="120"></textarea>
+          <label for="textarea2">Textarea</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6 offset-s3 offset-m4">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
     </form>
-  </center>
-  <hr size="3" noshade>
-  <center>
-    <a href="index.html">
-      <h2>Back to HomePage</h2>
-    </a>
-  </center>
+  </div>
 </body>
